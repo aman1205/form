@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  height: 100vh;
+
+}
+.register {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.register .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1400px;
+  height: 1024px;
+  position: relative;
+}
+
+.register .form {
+  position: absolute;
+  width: 420px;
+  height: 580px;
+  top: 354px;
+  left: 126px;
+}
+
+.register .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.register .group {
+  position: relative;
+  width: 420px;
+  height: 52px;
+}
+
+.register .overlap-group-wrapper {
+  width: 422px;
+  height: 52px;
+}
+
+.register .overlap-group {
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #d2d2d2;
+  position: relative;
+  width: 420px;
+}
+
+.register .text-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  font-family: "Cabin-Regular", Helvetica;
+  font-weight: 400;
+  color: #2e2e2e;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.register .overlap-wrapper {
+  position: relative;
+  width: 422px;
+  height: 52px;
+  margin-right: -2px;
+}
+
+.register .div-wrapper {
+  background-color: #000000;
+  position: absolute;
+  width: 422px;
+  height: 50px;
+  top: 530px;
+  left: 0;
+}
+
+.register .overlap {
+  height: 50px;
+  background-size: 100% 100%;
+  position: relative;
+  width: 420px;
+}
+
+.register .text-wrapper-2 {
+  position: absolute;
+  top: 18px;
+  left: 182px;
+  font-family: "Cabin-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.register .heading {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 243px;
+  left: 160px;
+}
+
+.register .welcome {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Bebas Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 68px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.register .logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 28px;
+  left: 236px;
+}
+
+.register .image {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -25px;
+  left: 684px;
+}
+
+.register .free-photo-black {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 250px;
+  /* left: 0; */
+  object-fit: cover;
+}

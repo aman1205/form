@@ -1,0 +1,91 @@
+import React from "react";
+import { Add } from "./Add";
+import { ArrowDown } from "./ArrowDown";
+import { ArrowLeft } from "./ArrowLeft";
+import { IconComponentNode } from "./IconComponentNode";
+import { NamecandidateNameAddScore101 } from "./NamecandidateNameAddScore101";
+import { Profile } from "./Profile";
+import "./style.css";
+
+export const My = () => {
+  return (
+    <div className="create-profile">
+      <div className="div">
+        <div className="text-wrapper">Personal Information</div>
+        <div className="group">
+          <div className="overlap-group">
+            <div className="ellipse" />
+            <ArrowLeft className="arrow-left" />
+          </div>
+        </div>
+        <div className="overlap-wrapper">
+          <div className="overlap-group">
+            <div className="ellipse-2" />
+            <IconComponentNode className="arrow-left-instance" />
+          </div>
+        </div>
+        <div className="group-2">
+          <div className="rectangle" />
+          <div className="rectangle-2" />
+          <div className="rectangle-3" />
+          <div className="rectangle-4" />
+        </div>
+        <div className="group-3">
+          <div className="frame">
+            <div className="text-wrapper-2">First Name *</div>
+          </div>
+          <div className="div-wrapper">
+            <div className="text-wrapper-2">Middle Name</div>
+          </div>
+          <div className="frame-2">
+            <div className="text-wrapper-2">Last Name *</div>
+          </div>
+          <div className="frame-3">
+            <div className="text-wrapper-2">Country *</div>
+            <ArrowDown className="arrow-down" />
+          </div>
+          <div className="frame-4">
+            <div className="text-wrapper-2">Email *</div>
+          </div>
+          <div className="frame-5">
+            <div className="text-wrapper-3">Phone No. *</div>
+          </div>
+          <div className="frame-6">
+            <div className="text-wrapper-2">+91</div>
+            <ArrowDown className="arrow-down" />
+          </div>
+          <div className="frame-7">
+            <div className="text-wrapper-2">Gender *</div>
+            <ArrowDown className="arrow-down" />
+          </div>
+          <div className="frame-8">
+            <div className="text-wrapper-2">DOB *</div>
+            <img className="vuesax-bold-calendar" alt="Vuesax bold calendar" src="calendar.png" />
+          </div>
+          <div className="frame-9">
+            <div className="text-wrapper-2">Linkedin Profile Link</div>
+          </div>
+          <div className="frame-10">
+            <div className="text-wrapper-2">City *</div>
+          </div>
+          <div className="frame-11">
+            <div className="text-wrapper-2">Personal Portfolio Link</div>
+          </div>
+          <div className="group-4">
+            <div className="overlap-group-2">
+              <Profile className="profile-instance" />
+              <div className="overlap">
+                <Add className="add-instance" />
+              </div>
+            </div>
+            <div className="text-wrapper-4">Upload Profile Picture</div>
+          </div>
+        </div>
+        <div className="overlap-2">
+          <div className="ellipse-3" />
+          <NamecandidateNameAddScore101 className="icon-instance-node" />
+        </div>
+      </div>
+    </div>
+  );
+};
