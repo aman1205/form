@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;400;500&family=Satisfy&display=swap");
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff !important;
+  margin: 20px;
+  border-radius: 4%;
+  box-shadow: 15px 15px 30px #90e0ef, -15px -15px 30px #caf0f8;
+}
+
+.column1 {
+  flex: 1;
+  width: 50%;
+  height: auto;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  padding: 10px;
+  margin: 20px;
+}
+
+.container {
+  height: 100%;
+  display: flex; /* Set the height of the container to 100% of viewport height */
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
+}
+
+.container img {
+  /* Make sure the image doesn't exceed the height of the container */
+ width: 900px;
+
+  border-radius: 4%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+  text-align: center;
+}
+h2 {
+  text-edge: cap;
+  font-family: Bebas Neue;
+  font-size: 4.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.input {
+  background-color: #ffffff;
+  width: 350px;
+  height: 40px;
+  padding: 15px;
+  margin: 5px;
+
+  /* text-align: center; */
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgb(4, 51, 104);
+}
+
+.input:focus {
+  color: rgb(96, 156, 206);
+  background-color: #ffffff;
+  outline-color: rgb(96, 156, 206);
+  box-shadow: -3px -3px 15px rgb(96, 156, 206);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+select {
+  background-color: #ffffff;
+  width: 386px;
+  height: 70px;
+  padding:  15px;
+  margin: 5px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgb(4, 51, 104);
+}
+
+/* Add the following styles for the select element when it's focused */
+select:focus {
+  color: rgb(96, 156, 206);
+  background-color: #ffffff;
+  outline-color: rgb(96, 156, 206);
+  box-shadow: -3px -3px 15px rgb(96, 156, 206);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+button {
+  background: #fdfdfd;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #212121;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.otp {
+  background-color: green;
+}
+.otp:hover {
+  opacity: 50%;
+}
+@media (max-width: 992px) {
+  .container {
+    display: none; /* Hide the container for medium screens */
+  }
+}
+.error{
+  color: brown;
+}
+
+
+/* Media query for screens with a maximum width of 768px (typical for small screens) */
+@media (max-width: 768px) {
+  .input {
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    padding: 15px;
+    margin: 5px;
+
+    /* text-align: center; */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(4, 51, 104);
+  }
+  select {
+    background-color: #ffffff;
+    width: 332px;
+    height: 50px;
+    padding: 0px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(4, 51, 104);
+  }
+  .container {
+    display: none; /* Hide the container for small screens */
+  }
+  .custom-toast{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

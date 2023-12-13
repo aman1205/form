@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import Form from './Form'
-import Raj from './Raj'
+import Newform from "./Newform";
+import RegistrationClosed from "./RegistrationClosed";
+import "./index.css";
+import Test from './Test'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Form/>
-      {/* <Raj/> */}
+      {/* <Test/> */}
+      {/* <RegistrationClosed/> */}
+      {/* <div className="flex justify-center items-center h-96 text-5xl">
+        <h1 className=" text-black-800"> Welcome From Team MLCOE</h1>
+      </div> */}
+      <Newform/>     
     </>
-  )
+  );
 }
 
-export default App
+export default App;
